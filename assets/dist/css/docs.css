@@ -1,0 +1,73 @@
+.max-height-300 pre {
+  max-height: 300px;
+}
+
+.bg{
+  background-image: url(/docs/assets/img);
+
+  width: -50px;
+  height: auto;
+}
+
+.rgba-gradient {
+  background: -moz-linear-gradient(45deg, rgb(160, 248, 120), rgb(53, 126, 10) 100%);
+  background: -webkit-linear-gradient(45deg, rgba(160, 248, 120), rgb(53, 126, 10) 100%);
+  background: linear-gradient(to 45deg, rgba(160, 248, 120), rgb(53, 126, 10) 100%);
+}
+
+.textColor{
+  color: white;
+}
+
+.fontBody{
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', Arial, sans-serif;
+}
+
+.theme-switch {
+  display: inline-block;
+  height: 24px;
+  position: relative;
+  width: 50px;
+}
+
+.theme-switch input {
+  display: none;
+}
+
+.slider {
+  background-color: #ccc;
+  bottom: 0;
+  cursor: pointer;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  transition: 400ms;
+}
+
+.slider::before {
+  background-color: #fff;
+  bottom: 4px;
+  content: "";
+  height: 16px;
+  left: 4px;
+  position: absolute;
+  transition: 400ms;
+  width: 16px;
+}
+
+input:checked + .slider {
+  background-color: #66bb6a;
+}
+
+input:checked + .slider::before {
+  transform: translateX(26px);
+}
+
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round::before {
+  border-radius: 50%;
+}
